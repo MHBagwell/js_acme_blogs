@@ -179,7 +179,6 @@ const displayComments = async (postId) => {
     const comments = await getPostComments(postId);
     const fragment = createComments(comments);
     section.append(fragment);
-    console.log(section);
     return section;
 }
 
@@ -210,7 +209,6 @@ const createPosts = async (jsonPosts) => {
 
         fragment.append(article);
     }
-    console.log(fragment);
     return fragment;
 };
 
